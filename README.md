@@ -1,2 +1,1 @@
-# MOAiOS.github.io
-moa-ios-blog
+#MOA_iOS Blog

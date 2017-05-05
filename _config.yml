@@ -1,0 +1,114 @@
+# Site settings
+title: MOA_iOS's Blog
+SEOTitle: MOA_iOS's Blog
+header-img: img/home-bg.jpg
+email: ios.moa.sanfor@gmail.com
+description: "关于MOA | iOS，, MOA_iOS Blog, 博客, 团队网站, 互联网, iOS"
+url: "https://MOAiOS.github.io"              # your host, for absolute URL
+baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
+
+
+
+# SNS settings
+RSS: false
+weibo_username:     MOAiOS
+zhihu_username:     MOAiOS
+github_username:    MOAiOS
+#twitter_username:  huxpro
+#facebook_username:  huxpro
+# linkedin_username:  firstname-lastname-idxxxx
+
+
+
+# Build settings
+# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+highlighter: rouge
+permalink: pretty
+paginate: 10
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
+anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+
+
+
+# Gems
+# from PR#40, to support local preview for Jekyll 3.0
+gems: [jekyll-paginate]
+
+
+
+# Markdown settings
+# replace redcarpet to kramdown,
+# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
+# document: http://jekyllrb.com/docs/configuration/#kramdown
+markdown:    kramdown
+lsi:         false
+excerpt_separator: "\n\n"
+incremental: false
+
+
+kramdown:
+  auto_ids:       true
+  footnote_nr:    1
+  entity_output:  as_char
+  toc_levels:     1..6
+  smart_quotes:   lsquo,rsquo,ldquo,rdquo
+  input:          GFM
+  syntax_highlighter: rouge
+  hard_wrap:      false
+  footnote_nr:    1
+
+
+# Disqus settings
+#disqus_username: _your_disqus_short_name_
+
+# Duoshuo settings
+duoshuo_username: MOAiOS
+# Share component is depend on Comment so we can NOT use share only.
+duoshuo_share: false                     # set to false if you want to use Comment without Sharing
+
+
+
+
+# Analytics settings
+# Baidu Analytics
+# ba_track_id: [your track id]
+
+# Google Analytics
+ga_track_id: 'UA-88835830-1'            # Format: UA-xxxxxx-xx
+ga_domain: auto
+
+
+
+# Sidebar settings
+sidebar: true                           # whether or not using Sidebar.
+sidebar-about-description: "MOA_iOS，<br>Blog！"
+sidebar-avatar: /img/avatar-hux.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+
+
+
+# Featured Tags
+featured-tags: true                     # whether or not using Feature-Tags
+featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
+
+
+
+# Progressive Web Apps
+chrome-tab-theme-color: "#000000"
+service-worker: true
+
+navigation:
+  - title: Archive
+    url: /Archives
+  - title: About
+    url: /about
+  - title: TAGS
+    url: /tags
+
+# Friends
+friends: [
+    {
+        title: "这里还没有哦，想要加入吗？",
+        href: ""
+    },
+
+]
